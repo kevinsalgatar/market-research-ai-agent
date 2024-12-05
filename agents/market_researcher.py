@@ -1,14 +1,15 @@
-from crewai import Agent
+from agents.base_agent import BaseAgent
 from tools.search_tools import SearchTools
 from tools.web_scraping_tools import WebScrapingTools
 
-class MarketResearcherAgent:
+class MarketResearcherAgent(BaseAgent):
     def __init__(self):
+        super().__init__()
         self.search_tools = SearchTools()
         self.web_tools = WebScrapingTools()
 
     def create(self):
-        return Agent(
+        return self.create_agent(
             role='Market Research Specialist',
             goal='Conduct comprehensive market research and gather detailed information about companies, products, and industry trends',
             backstory='''
@@ -19,7 +20,5 @@ class MarketResearcherAgent:
             tools=[
                 self.search_tools.web_search,
                 self.web_tools.scrape_website
-            ],
-            verbose=True,
-            allow_delegation=False
+            ]
         )

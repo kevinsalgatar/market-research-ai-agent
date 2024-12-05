@@ -1,12 +1,13 @@
-from crewai import Agent
+from agents.base_agent import BaseAgent
 from tools.analysis_tools import AnalysisTools
 
-class DataAnalystAgent:
+class DataAnalystAgent(BaseAgent):
     def __init__(self):
+        super().__init__()
         self.analysis_tools = AnalysisTools()
 
     def create(self):
-        return Agent(
+        return self.create_agent(
             role='Data Analyst',
             goal='Analyze market data and identify key trends, patterns, and insights',
             backstory='''
@@ -17,7 +18,5 @@ class DataAnalystAgent:
             tools=[
                 self.analysis_tools.analyze_data,
                 self.analysis_tools.create_visualization
-            ],
-            verbose=True,
-            allow_delegation=False
+            ]
         )

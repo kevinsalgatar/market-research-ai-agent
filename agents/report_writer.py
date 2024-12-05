@@ -1,8 +1,11 @@
-from crewai import Agent
+from agents.base_agent import BaseAgent
 
-class ReportWriterAgent:
+class ReportWriterAgent(BaseAgent):
+    def __init__(self):
+        super().__init__()
+
     def create(self):
-        return Agent(
+        return self.create_agent(
             role='Report Writer',
             goal='Create comprehensive and well-structured market research reports',
             backstory='''
@@ -10,7 +13,5 @@ class ReportWriterAgent:
                 concise, and insightful market research reports. You excel at 
                 presenting complex information in an easily digestible format.
             ''',
-            tools=[],  # Report writer primarily uses language abilities
-            verbose=True,
-            allow_delegation=False
+            tools=[]
         )
