@@ -1,0 +1,62 @@
+# CLI Configuration
+default_settings:
+  output_dir: reports
+  format: md
+  templates_dir: examples/templates
+
+# Analysis Types
+analysis_types:
+  startup:
+    template: market_report_template.md
+    required_fields:
+      - startup_name
+      - target_market
+    optional_fields:
+      - timeframe
+      - focus_areas
+
+  competitor:
+    template: competitor_analysis_template.md
+    required_fields:
+      - company
+      - competitors
+      - industry
+    optional_fields:
+      - metrics
+      - timeframe
+
+  market_entry:
+    template: trend_analysis_template.md
+    required_fields:
+      - company
+      - target_market
+      - strategy
+    optional_fields:
+      - entry_timeline
+      - investment_required
+
+# Report Settings
+report_settings:
+  md:
+    include_metadata: true
+    include_toc: true
+    include_references: true
+  
+  html:
+    include_charts: true
+    include_styling: true
+    responsive: true
+
+# Visualization Settings
+visualization_settings:
+  charts:
+    default_width: 800
+    default_height: 600
+    color_scheme: tableau10
+    export_format: png
+
+# API Settings
+api_settings:
+  timeout: 30
+  max_retries: 3
+  retry_delay: 5
