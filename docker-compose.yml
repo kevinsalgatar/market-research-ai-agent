@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  market-research-agent:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "main.py"]
