@@ -1,0 +1,69 @@
+{
+    "scenario": "E-commerce Platform Competitive Analysis",
+    "target_company": {
+        "name": "ShopMax",
+        "industry": "E-commerce",
+        "business_model": "B2C Marketplace",
+        "target_market": "Global"
+    },
+    "analysis_parameters": {
+        "timeframe": "6months",
+        "focus_areas": [
+            "Platform Features",
+            "Market Share",
+            "Growth Metrics",
+            "Customer Experience"
+        ],
+        "key_competitors": [
+            "Amazon",
+            "Walmart",
+            "eBay",
+            "Shopify"
+        ]
+    },
+    "research_areas": {
+        "platform_comparison": {
+            "core_features": [
+                "Search functionality",
+                "Payment options",
+                "Mobile experience",
+                "Seller tools"
+            ],
+            "technology_stack": [
+                "Cloud infrastructure",
+                "AI/ML capabilities",
+                "API ecosystem",
+                "Analytics tools"
+            ]
+        },
+        "market_metrics": {
+            "key_indicators": [
+                "GMV (Gross Merchandise Value)",
+                "Active users",
+                "Conversion rate",
+                "Customer acquisition cost"
+            ],
+            "growth_metrics": [
+                "Year-over-year growth",
+                "Market share trends",
+                "Category expansion",
+                "Geographic reach"
+            ]
+        },
+        "customer_experience": {
+            "metrics": [
+                "NPS score",
+                "Customer satisfaction",
+                "App store ratings",
+                "Support response time"
+            ],
+            "feature_satisfaction": [
+                "Search accuracy",
+                "Checkout process",
+                "Delivery options",
+                "Returns handling"
+            ]
+        }
+    },
+    "cli_command": "python cli.py benchmark --company 'ShopMax' --competitors 'Amazon,Walmart,eBay,Shopify' --industry 'E-commerce' --format html"
+}

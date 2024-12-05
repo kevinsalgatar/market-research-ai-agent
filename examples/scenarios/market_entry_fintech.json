@@ -1,0 +1,63 @@
+{
+    "scenario": "Fintech Market Entry Analysis",
+    "target_company": {
+        "name": "GlobalPay Solutions",
+        "industry": "Financial Technology",
+        "product_focus": "Digital Payments",
+        "target_market": "Southeast Asia"
+    },
+    "analysis_parameters": {
+        "timeframe": "24months",
+        "entry_strategy": "Joint Venture",
+        "focus_areas": [
+            "Digital Payment Trends",
+            "Regional Regulations",
+            "Market Penetration Strategies",
+            "Local Competition"
+        ]
+    },
+    "research_areas": {
+        "market_assessment": {
+            "size_and_growth": "Digital payments market size",
+            "key_drivers": [
+                "Mobile adoption",
+                "E-commerce growth",
+                "Financial inclusion"
+            ],
+            "challenges": [
+                "Regulatory compliance",
+                "Infrastructure limitations",
+                "Market fragmentation",
+                "Cultural preferences"
+            ]
+        },
+        "competitive_landscape": {
+            "local_players": [
+                "GrabPay",
+                "GoPay",
+                "OVO"
+            ],
+            "global_competitors": [
+                "PayPal",
+                "Stripe",
+                "Wise"
+            ],
+            "analysis_metrics": [
+                "Market share",
+                "User base",
+                "Transaction volume",
+                "Feature comparison"
+            ]
+        },
+        "regulatory_environment": {
+            "licensing_requirements": "Payment system operator license",
+            "compliance_standards": [
+                "AML regulations",
+                "Data protection laws",
+                "Consumer protection"
+            ],
+            "regional_variations": "Country-specific regulations"
+        }
+    },
+    "cli_command": "python cli.py market-entry --company 'GlobalPay Solutions' --target-market 'Southeast Asia' --strategy 'Joint Venture' --format html"
+}
