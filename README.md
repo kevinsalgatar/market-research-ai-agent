@@ -149,4 +149,3 @@ MIT License - see LICENSE file for details
 - CrewAI for the multi-agent framework
 - OpenAI for language models
 - Various open-source tools and libraries
-
